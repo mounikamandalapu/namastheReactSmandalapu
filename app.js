@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 //creating an element is core thing of React, so CreateELement API is part of React.
 //createElement -> html tag, object that gives attributes, child
 const h1 = React.createElement(
@@ -11,8 +13,16 @@ const parent = React.createElement(
   "div",
   {},
   React.createElement("div", { className: "parent2" }, [
-    React.createElement("h1", { className: "header" }, "I'm H1 tag"),
-    React.createElement("h2", { className: "h2tagg" }, "siblings: I'm h2 tag"),
+    React.createElement(
+      "h1",
+      { className: "header", key: "header1" },
+      "I'm H1 tag"
+    ),
+    React.createElement(
+      "h2",
+      { className: "h2tagg", key: "header2" },
+      "siblings: I'm h2 tag"
+    ),
   ])
 );
 //We need to create a root

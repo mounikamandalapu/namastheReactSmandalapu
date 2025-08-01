@@ -1,0 +1,30 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is the react project",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mounikamandalapu/namastheReactSmandalapu.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "smandalapu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mounikamandalapu/namastheReactSmandalapu/issues"
+  },
+  "homepage": "https://github.com/mounikamandalapu/namastheReactSmandalapu#readme",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
