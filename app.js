@@ -1,32 +1,40 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-//creating an element is core thing of React, so CreateELement API is part of React.
-//createElement -> html tag, object that gives attributes, child
-const h1 = React.createElement(
-  "h1",
-  { className: "helloWorld", id: "heading", style: { color: "red" } },
-  "Hello World"
-); // returns an object
-console.log(h1);
-//nested elements
-const parent = React.createElement(
-  "div",
-  {},
-  React.createElement("div", { className: "parent2" }, [
-    React.createElement(
-      "h1",
-      { className: "header", key: "header1" },
-      "I'm H1 tag"
-    ),
-    React.createElement(
-      "h2",
-      { className: "h2tagg", key: "header2" },
-      "siblings: I'm h2 tag"
-    ),
-  ])
+import Counter from "./Counter";
+
+//JSX element -> babel converts this React Element(Object) -> when rendered on DOM converts to HTML Elements
+const heading = (
+  <h1 id="heading" className="root">
+    Hi Hello Nehansh from REACT
+  </h1>
 );
-//We need to create a root
-//Creating a root and rendering anything to Root is job of ReactDOM.
+
+const Title = () => {
+  return <h1 id="title">Namasthe React Course</h1>;
+};
+
+//React Functional Component
+const Header = () => (
+  <div>
+    <Title />
+    <h1>React Functional Component</h1>
+  </div>
+);
+
+// function HeaderNormal() {
+//   return (
+//     <div>
+//       <Title />
+//       {(function (a) {
+//         if (true) {
+//           console.log(a);
+//         }
+//       })(10)}
+//       {true ? heading : null}
+//       <h1>REakflsdkfj</h1>
+//     </div>
+//   );
+// }
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-//render will take the reactELement as object creates an HTML element and then places it to the DOM.
-root.render(parent);
+
+root.render(<Header />);
