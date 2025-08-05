@@ -11,6 +11,7 @@ JSX - HTML like syntax in js - not understood by browsers JS Engine, it only und
 Transplier - Which is used to converts code from one high-level language to another high-level language. - Babel is a mostly used transpiler.
 Babel - Babel is a compiler and transpiler.
 Babel transpiles modern JavaScript (ES6+) or JSX into older JavaScript (ES5) so it works in older browsers.
+//JSX element -> babel converts this React Element(Object) -> when rendered on DOM converts to HTML Elements
 JSX -> React.createElement -> ReactElement(Js Object) -> HTMLElement(render)
 babel react reactDOM
 HTML JSX
