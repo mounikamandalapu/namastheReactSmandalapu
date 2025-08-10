@@ -6,6 +6,7 @@
 .headerContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -68,4 +69,32 @@ h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.filter-res {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.shimmer-container {
+  display: flex;
+}
+
+.shimmer-card {
+  width: 15vw;
+  text-align: center;
+  margin: 10px;
+  height: 200px;
+  background-color: #f0f0f0;
+}
+.login-btn {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 0;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px;
+  :hover {
+    cursor: pointer;
+  }
 }
